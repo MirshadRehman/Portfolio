@@ -1,0 +1,284 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 30px;
+    background-color: #333;
+    color: rgb(214, 214, 214);
+    z-index: 1000;
+}
+.navbar a {
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    margin: 0 15px;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #cac8c8;
+    color: rgb(36, 36, 36);
+    text-align: center;
+    padding: 50px 10px;
+    height: fit-content;
+}
+.home img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    top: 20px; /* Move the image 50px up */
+    margin-bottom: 20px;
+}
+.home h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.home p {
+    font-size: 1.2em;
+}
+.features {
+    
+    justify-content: space-around;
+    padding: 75px 10px;
+    background-color: rgb(226, 246, 255);
+}
+.feature {
+    text-align: left;
+    padding: 40px ;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 5px;
+    background: transparent;
+   
+   
+}
+.feature1 {
+    text-align: left;
+    padding: 20px ;
+   
+}
+.feature h3 {
+    margin-bottom: 20px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 30px;
+    background-color: #0c0c0cfa;
+    color: #f4f4f4;
+}
+.contact {
+    text-align: center;
+    width: 30%;
+}
+.contact h3 {
+    margin-bottom: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+}
+.container5 {
+   justify-content: space-around;
+    background-color: #cac8c8;
+    border-radius: 10px;
+    box-shadow: 0 0 8px; /* Horizontal Offset | Vertical Offset | Blur Radius | Shadow Color */
+    padding: 20px;
+    margin: 20px;
+}
+.container {
+    width: 30%;
+    justify-content: space-around;
+     background-color: #cac8c8;
+     border-radius: 10px;
+     box-shadow: 0 0 8px; /* Horizontal Offset | Vertical Offset | Blur Radius | Shadow Color */
+     padding: 20px;
+     margin: 20px;
+ }
+.container2 {
+    justify-content: space-around;
+     background-color: rgb(226, 246, 255);
+     border-radius: 10px;
+     box-shadow: 0 0 5px; /* Horizontal Offset | Vertical Offset | Blur Radius | Shadow Color */
+     padding: 20px;
+     margin: 20px;
+ }
+ .features h1{
+    margin: 20px;
+    padding: 20px;
+    font-weight: bold;
+    
+ }
+ 
+ .container3 {
+    justify-content: space-around;
+    width: 30%;
+     background: transparent;
+     border-radius: 10px;
+     box-shadow: 0 0 5px; /* Horizontal Offset | Vertical Offset | Blur Radius | Shadow Color */
+     padding: 20px;
+     margin: 20px;
+ }
+
+ .container3 h1{
+    margin-bottom: 10px;
+ }
+
+ .container4 {
+      height: 400px;
+     background-color: rgb(156, 204, 226);
+     border-radius: 10px;
+     box-shadow: 0 0 8px; /* Horizontal Offset | Vertical Offset | Blur Radius | Shadow Color */
+     padding: 20px;
+     margin: 20px;
+     
+ }
+
+.projects {
+    
+
+    padding: 75px 10px;
+    background-color: rgb(226, 246, 255);
+    
+}
+.project {
+    padding: 10px 0;
+    margin: 10px;
+    
+   
+}
+.project2{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+   margin: 10px;
+  
+}
+.project h3 {
+    margin-bottom: 20px;
+}
+.about{
+    display: flex;
+    justify-content:safe;
+}
+.edu{
+    display: flex;
+    justify-content: space-around;
+}
+.links{
+    display: block;
+    margin: 10px;
+    box-shadow: 0 0 5px;
+    
+    
+}
+.links p{
+    padding: 10px 10px;
+    color: blue;
+}
+.links b{
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        
+    }
+    .navbar a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    .logo h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        height: fit-content;
+    }
+    .home img {
+        width: 80%;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+    .home h1 {
+        font-size: 2em;
+    }
+    .home p {
+        font-size: 1em;
+    }
+
+    .projects, .features, .contacts {
+        padding: 1px 1px;
+    }
+    .about, .project2,  .edu{
+        
+        flex-direction: column  ;
+        margin: 1px;
+        
+    }
+     .feature1, .contact {
+        padding: 10px;
+        margin: 10px 0;
+    }
+     .project{
+       margin: 1px;
+    }
+  
+     .container5 {
+        margin: 4px;
+    }
+    .feature, .container,.container3{
+        margin: 10px;
+        width:auto;
+    }
+    
+
+      .container4  {
+      margin: 5px;
+      height: fit-content;
+
+    }
+    .container2{
+      margin: 2px;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+    .contact {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .contact h3 {
+        font-size: 1.2em;
+    }
+
+    .footer {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
